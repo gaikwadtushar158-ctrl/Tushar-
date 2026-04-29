@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: var(--color-blue-600);
+  --color-success: var(--color-emerald-500);
+  --color-danger: var(--color-red-500);
+  --radius-bento: 2rem;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+  }
+}
+
+.bento-card {
+  @apply bg-white rounded-[2rem] p-6 shadow-sm border border-slate-200 transition-all duration-300;
+}
+
+.bento-card-dark {
+  @apply bg-slate-900 rounded-[2rem] p-6 shadow-lg text-white border border-slate-800 transition-all duration-300;
+}
+
